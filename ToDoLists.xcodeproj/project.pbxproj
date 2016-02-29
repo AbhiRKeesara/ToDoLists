@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0A12747A1C7AC3CB004C1218 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1274791C7AC3CB004C1218 /* AllListsViewController.swift */; };
 		0A12747C1C7ACFAB004C1218 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A12747B1C7ACFAB004C1218 /* Checklist.swift */; };
+		0A1CF9A81C8233590004010F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CF9A71C8233590004010F /* DataModel.swift */; };
+		0A1CF9AA1C8279FC0004010F /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CF9A91C8279FC0004010F /* IconPickerViewController.swift */; };
 		0A1F8ED21C78324B007CCAFC /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1F8ED11C78324B007CCAFC /* ItemDetailViewController.swift */; };
 		0A23FCCF1C7B8CE300B7BDC5 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23FCCE1C7B8CE300B7BDC5 /* ListDetailViewController.swift */; };
 		0A412B1C1C769BFF006D0865 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A412B1B1C769BFF006D0865 /* ChecklistItem.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		0A1274791C7AC3CB004C1218 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		0A12747B1C7ACFAB004C1218 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		0A1CF9A71C8233590004010F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		0A1CF9A91C8279FC0004010F /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		0A1F8ED11C78324B007CCAFC /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0A23FCCE1C7B8CE300B7BDC5 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		0A412B1B1C769BFF006D0865 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				0A1274791C7AC3CB004C1218 /* AllListsViewController.swift */,
 				0A12747B1C7ACFAB004C1218 /* Checklist.swift */,
 				0A23FCCE1C7B8CE300B7BDC5 /* ListDetailViewController.swift */,
+				0A1CF9A71C8233590004010F /* DataModel.swift */,
+				0A1CF9A91C8279FC0004010F /* IconPickerViewController.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 				0A9F4D0E1C756A51002294FF /* ChecklistViewController.swift in Sources */,
 				0A23FCCF1C7B8CE300B7BDC5 /* ListDetailViewController.swift in Sources */,
 				0A1F8ED21C78324B007CCAFC /* ItemDetailViewController.swift in Sources */,
+				0A1CF9AA1C8279FC0004010F /* IconPickerViewController.swift in Sources */,
 				0A12747C1C7ACFAB004C1218 /* Checklist.swift in Sources */,
 				0A412B1C1C769BFF006D0865 /* ChecklistItem.swift in Sources */,
+				0A1CF9A81C8233590004010F /* DataModel.swift in Sources */,
 				0A12747A1C7AC3CB004C1218 /* AllListsViewController.swift in Sources */,
 				0A9F4D0C1C756A51002294FF /* AppDelegate.swift in Sources */,
 			);
@@ -271,10 +279,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Checklists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ark.ToDoLists;
 				PRODUCT_NAME = ToDoLists;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -285,10 +295,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Checklists/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ark.ToDoLists;
 				PRODUCT_NAME = ToDoLists;
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

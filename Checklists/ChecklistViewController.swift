@@ -82,6 +82,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         super.viewDidLoad()
         
         title = checklist.name
+        view.backgroundColor = UIColor(red: 0.5, green: 0, blue: 0, alpha: 1)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -103,7 +104,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         
         let item = checklist.items[indexPath.row]
             
-       
+       cell.backgroundColor = UIColor.yellowColor()
         configureTextForCell(cell, withChecklistItem: item)
         configureCheckmarkForCell(cell, withChecklistItem: item)
         return cell
@@ -159,6 +160,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
         // assigning the tag to the label and using it
         let label = cell.viewWithTag(100) as! UILabel
         label.text = item.text
+//        label.text = "\(item.itemID): \(item.text)"
     }
 
     
