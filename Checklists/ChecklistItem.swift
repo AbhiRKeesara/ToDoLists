@@ -61,7 +61,6 @@ class ChecklistItem: NSObject, NSCoding {
         
         if let notification = existingNotification {
             
-//            print("Found an existing notification \(notification)")
         
             UIApplication.sharedApplication().cancelLocalNotification(notification)
         }
@@ -79,8 +78,8 @@ class ChecklistItem: NSObject, NSCoding {
             localNotification.userInfo = ["ItemID": itemID]
             
            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-//            
-//            print("Scheduled notification \(localNotification) for  itemID \(itemID)")
+            
+
         }
     }
     

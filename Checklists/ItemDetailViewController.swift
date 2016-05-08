@@ -9,7 +9,7 @@
 import UIKit
 
 // delegates in five steps(1,2,3,4,5)
-//step-1 definedelegate protocol for object(additem view controller)
+//step-1 define delegate protocol for object(additem view controller)
 
 protocol ItemDetailViewControllerDelegate: class {
     func itemDetailViewControllerDidCancel(controller: ItemDetailViewController)
@@ -31,7 +31,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate   {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.purpleColor()
+        view.backgroundColor = UIColor.brownColor()
         
         if let item = itemToEdit {
             
@@ -168,7 +168,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate   {
             
         }
         
-         tableView.beginUpdates()
+        tableView.beginUpdates()
         
         
         tableView.insertRowsAtIndexPaths([indePathDatePicker], withRowAnimation: .Fade)
@@ -246,7 +246,7 @@ class ItemDetailViewController: UITableViewController, UITextFieldDelegate   {
             indexPath = NSIndexPath(forRow: 0, inSection: indexPath.section)
             
         }
-            
+        
         return super.tableView(tableView, indentationLevelForRowAtIndexPath: indexPath)
         
         
