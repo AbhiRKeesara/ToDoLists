@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
     
     
@@ -22,6 +24,9 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         view.backgroundColor = UIColor.whiteColor()
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
